@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataRyn.Views.MasterDetailPage1Detail"
+             IconImageSource="tab_feed.jpg"
+             Title="To - Do List">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="TbRefresh" Icon="ic_refresh" Order="Primary" Priority="0" />
+        <ToolbarItem Name="TbFilter" Icon="ic_fiter"  Order="Primary" Priority="1" />
+    </ContentPage.ToolbarItems>
+    <StackLayout Padding="10">
+
+        <Grid Margin="0,4,0,4" Padding="7" HorizontalOptions="Fill"  RowSpacing="0" ColumnSpacing="0" IsClippedToBounds="True" VerticalOptions="Fill" BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"  />
+              
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="12*" />
+                <ColumnDefinition Width="58*" />
+                <ColumnDefinition Width="30*" />
+            </Grid.ColumnDefinitions>
+            <Frame  Grid.Column="2" Grid.Row="0" CornerRadius="23"  HeightRequest="23" WidthRequest="23"
+       OutlineColor="Gray" 
+       Padding="0" Margin="0" HorizontalOptions="End" VerticalOptions="End">
+
+                <Label Text="?" TextColor="gray" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+
+
+
+            </Frame>
+            <Label Margin="0,0,0,0" Grid.Column="0"  Grid.Row="0"  FontSize="Default" Text="Sort By "   HorizontalOptions="StartAndExpand"  />
+
+            <Label Margin="2,0,0,0" Grid.Column="1"  Grid.Row="0"   FontSize="Default" Text="BDD &#x25BC;"   HorizontalOptions="StartAndExpand" TextColor="DodgerBlue"  />
+
+
+
+        </Grid>
+
+     
+
+        <ListView x:Name="ST_LIST"  BackgroundColor="White" ItemSelected="ST_LIST_ItemSelected" HasUnevenRows="True" CachingStrategy="RetainElement" ItemsSource="{Binding Items}" SeparatorVisibility="Default">
+
+            <!--Built in Cells-->
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Margin="0,4,0,4" Padding="7" HorizontalOptions="Fill"  RowSpacing="0" ColumnSpacing="0" IsClippedToBounds="True" VerticalOptions="Fill" BackgroundColor="White">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"  />
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="70*" />
+                                <ColumnDefinition Width="30*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Margin="0,0,0,0" Grid.Column="0"  Grid.Row="0" x:Name="txtweeknum"  FontSize="Default" Text="{Binding week_no}"   HorizontalOptions="StartAndExpand"  />
+
+                            <Frame Grid.Column="1"  Grid.Row="0" CornerRadius="23"  HeightRequest="23" WidthRequest="23" OutlineColor="{Binding bgColor}"  Padding="0" Margin="0" HorizontalOptions="End" VerticalOptions="End">
+                                <Label Text="{Binding roundText}" TextColor="{Binding bgColor}" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                            </Frame>
+                            <Label Margin="0,0,0,0" Grid.ColumnSpan="2" Grid.Row="1" x:Name="txtDate"   FontSize="Default" Text="{Binding week_date}"    HorizontalOptions="StartAndExpand"  />
+                            <Label Margin="0,0,0,0" Grid.ColumnSpan="2" Grid.Row="2" x:Name="txtSn"    FontSize="Medium" Text="{Binding store_name}"  HorizontalOptions="StartAndExpand"  FontAttributes="Bold" LineBreakMode="TailTruncation"/>
+                            <Label Margin="0,0,0,0" Grid.ColumnSpan="2"  Grid.Row="3" x:Name="txtSa"  FontSize="Default" Text="{Binding store_address}"  HorizontalOptions="StartAndExpand" FontAttributes="Bold" LineBreakMode="TailTruncation"/>
+
+                            <Label Margin="0,0,0,0" Grid.Column="0" Grid.Row="4" x:Name= "txtcodingtype"    FontSize="Small" Text="{Binding coding_type}"  HorizontalOptions="StartAndExpand"  VerticalOptions="Center"/>
+                            <Button Margin="0,0,0,0" Grid.Column="1" Grid.Row="4" x:Name="butStart"  IsVisible="{Binding txtStart}"   Text="Start Audit"  HorizontalOptions="EndAndExpand" VerticalOptions="Center" TextColor="White" BackgroundColor="DodgerBlue"  FontSize="13" HeightRequest="33"/>
+                            
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+    </StackLayout>
+</ContentPage>

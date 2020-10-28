@@ -1,0 +1,15 @@
+C:\Users\Vignesh prabhu\source\repos\DataRyn\DataRyn\bin\Debug\netstandard2.0\DataRyn.deps.json
+C:\Users\Vignesh prabhu\source\repos\DataRyn\DataRyn\bin\Debug\netstandard2.0\DataRyn.dll
+C:\Users\Vignesh prabhu\source\repos\DataRyn\DataRyn\bin\Debug\netstandard2.0\ref\DataRyn.dll
+C:\Users\Vignesh prabhu\source\repos\DataRyn\DataRyn\bin\Debug\netstandard2.0\DataRyn.pdb
+C:\Users\Vignesh prabhu\source\repos\DataRyn\DataRyn\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Vignesh prabhu\source\repos\DataRyn\DataRyn\obj\Debug\netstandard2.0\Views\MasterDetailPage1.xaml.g.cs
+C:\Users\Vignesh prabhu\source\repos\DataRyn\DataRyn\obj\Debug\netstandard2.0\Views\MasterDetailPage1Detail.xaml.g.cs
+C:\Users\Vignesh prabhu\source\repos\DataRyn\DataRyn\obj\Debug\netstandard2.0\Views\MasterDetailPage1Master.xaml.g.cs
+C:\Users\Vignesh prabhu\source\repos\DataRyn\DataRyn\obj\Debug\netstandard2.0\DataRyn.AssemblyInfoInputs.cache
+C:\Users\Vignesh prabhu\source\repos\DataRyn\DataRyn\obj\Debug\netstandard2.0\DataRyn.AssemblyInfo.cs
+C:\Users\Vignesh prabhu\source\repos\DataRyn\DataRyn\obj\Debug\netstandard2.0\DataRyn.csproj.CoreCompileInputs.cache
+C:\Users\Vignesh prabhu\source\repos\DataRyn\DataRyn\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Vignesh prabhu\source\repos\DataRyn\DataRyn\obj\Debug\netstandard2.0\DataRyn.dll
+C:\Users\Vignesh prabhu\source\repos\DataRyn\DataRyn\obj\Debug\netstandard2.0\ref\DataRyn.dll
+C:\Users\Vignesh prabhu\source\repos\DataRyn\DataRyn\obj\Debug\netstandard2.0\DataRyn.pdb
